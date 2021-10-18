@@ -1,0 +1,281 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Test\\CBA.MovieApp.Test.csproj": {}
+  },
+  "projects": {
+    "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Common\\CBA.MovieApp.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Common\\CBA.MovieApp.Common.csproj",
+        "projectName": "CBA.MovieApp.Common",
+        "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Common\\CBA.MovieApp.Common.csproj",
+        "packagesPath": "C:\\Users\\Eman Calma\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eman Calma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Core\\CBA.MovieApp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Core\\CBA.MovieApp.Core.csproj",
+        "projectName": "CBA.MovieApp.Core",
+        "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Core\\CBA.MovieApp.Core.csproj",
+        "packagesPath": "C:\\Users\\Eman Calma\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eman Calma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Common\\CBA.MovieApp.Common.csproj": {
+                "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Common\\CBA.MovieApp.Common.csproj"
+              },
+              "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Infrastructure\\CBA.MovieApp.Infrastructure.csproj": {
+                "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Infrastructure\\CBA.MovieApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Infrastructure\\CBA.MovieApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Infrastructure\\CBA.MovieApp.Infrastructure.csproj",
+        "projectName": "CBA.MovieApp.Infrastructure",
+        "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Infrastructure\\CBA.MovieApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Eman Calma\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eman Calma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Test\\CBA.MovieApp.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Test\\CBA.MovieApp.Test.csproj",
+        "projectName": "CBA.MovieApp.Test",
+        "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Test\\CBA.MovieApp.Test.csproj",
+        "packagesPath": "C:\\Users\\Eman Calma\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Eman Calma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Core\\CBA.MovieApp.Core.csproj": {
+                "projectPath": "D:\\Development\\CBA.MovieApp\\CBA.MovieApp\\CBA.MovieApp.Core\\CBA.MovieApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
