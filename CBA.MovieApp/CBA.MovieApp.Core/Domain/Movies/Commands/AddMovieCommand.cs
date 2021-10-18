@@ -34,18 +34,11 @@ namespace CBA.MovieApp.Core.Domain.Movies.Commands
             {
                 try
                 {
-                    var casts = new List<Cast>();
-
-                    foreach (var cast in request.Casts)
-                    {
-                        casts.Add(_mapper.Map<Cast>(cast));
-                    }
-
                     var movie = new Movie()
                     {
                         Title = request.Title,
                         YearReleased = request.YearReleased,
-                        Casts = casts
+                        Casts = _mapper.Map<List<Cast>>(request.Casts)
                     };
 
                     var response = await _movieDataSource.Create(movie);
