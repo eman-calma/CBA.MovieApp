@@ -14,3 +14,10 @@ Reference:
 2. In your terminal/command prompt, go to the project folder and run "npm install" to install all packages needed to run the project.
 3. To run the project run "ng serve --open" (this should open a browser with the project. If in case it does not work with Chrome for some security reason, you can use other browser)
 
+Libraries used for .Net Project.
+- Mediatr
+- FluentValidation
+- AutoMapper
+- SwashBuckle
+- Microsoft.Extensions.Caching.Memory ( Can also use other caching tools suhc as redis)
+
