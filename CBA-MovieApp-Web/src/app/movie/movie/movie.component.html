@@ -1,0 +1,64 @@
+<div class="mx-2 mt-5">
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <input type="text" class="w-100 p-0"  [(ngModel)]="sort.searchCriteria">
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" (click)="search()">Search</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <table class="table table-hover table-bordered">
+                <thead class="thead-dark" title="Click to sort record.">
+                    <th (click)="sortData('Title')" class="pointer">Movie Title</th>
+                    <th (click)="sortData('YearReleased')" class="pointer">Year</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let movie of movies" (click)="getById(movie.id)">
+                        <td>{{ movie.title }}</td>
+                        <td>{{ movie.yearReleased }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+   
+</div>
+
+<form class="container mt-3">
+    <h2 class="border-bottom mb-3">Movie Details</h2>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Title</label>
+        <input type="text" name="movieTitle" class="form-control" id="exampleFormControlInput1" placeholder="Movie Title" [(ngModel)]="movie.title">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput2">Year</label>
+        <input type="text" maxlength="4" name="movieYearReleased" class="form-control text-short" id="exampleFormControlInput2"  [(ngModel)]="movie.yearReleased" placeholder="Year Released" minlength="4" (keypress)="keyPressNumbers($event)">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput3">Casts</label>
+        <div class="input-group">
+            <input type="text" name="cast" class="form-control" id="exampleFormControlInput3"  [(ngModel)]="castName" placeholder="Cast Name" minlength="4" >
+            <div class="input-group-append">
+                <button class="btn btn-primary" (click)="addCast()">Add Cast</button>
+            </div>
+        </div>
+    </div>
+    <div class="mt-2">
+        <ul>
+            <li *ngFor="let item of movie.casts">
+                <span>{{item.name}}</span>
+                <button type="button" class="btn close float-none pb-2 ml-3" title="Delete cast"  data-dismiss="alert" aria-label="Close" (click)="deleteCast(item.name)">
+                    <span aria-hidden="true" class="text-danger">×</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="submit()" [disabled]="isValid()">Save</button>
+</form>
+
+</div>
