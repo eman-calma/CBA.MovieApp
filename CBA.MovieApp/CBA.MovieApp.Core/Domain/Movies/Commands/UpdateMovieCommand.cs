@@ -51,7 +51,7 @@ namespace CBA.MovieApp.Core.Domain.Movies.Commands
                 catch (Exception ex)
                 {
                     //Implement error logging
-                    return ResponseModel.Failed($"An exception was thrown while fetching movies list.{Environment.NewLine}{ex.Message}");
+                    return ResponseModel.Failed($"An exception was thrown while updating movie details.{Environment.NewLine}{ex.Message}");
                 }
                 
             }
